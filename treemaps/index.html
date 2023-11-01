@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Squarify Treemap with Labels and Values</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <style>
+        .cell {
+            border: 1px solid #000;
+            color: white; /* Text color */
+            font-size: 14px; /* Font size for the text */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #treemap {
+            width: 1000px; /* Define a width for the div */
+            height: 800px; /* Define a height for the div */
+        }
+    </style>
+</head>
+<body>
+    <div id="treemap"></div>
+
+    <script>
+        d3.csv('file1.csv').then(function(rows) {
+            function unpack(rows, key) {
+                return rows.map(function(row) {
+                    return row[key];
+                });
+            }
+
+            const colorScale = d3.scaleOrdinal(d3.schemeCategory10); // Create a color scale
+
+            const width = 1200;
+            const height = 900;
+
+            const treemap = d3.treemap().tile(d3.treemapSquarify)
+                .size([width, height]);
+
+            // Create hierarchy with labels and values
+            const data = {
+                name: "Root",
+                children: unpack(rows, 'label').map((label, i) => ({ name: label, value: parseFloat(unpack(rows, 'values')[i]), parent: unpack(rows, 'parent')[i] }))
+            };
+
+            const hierarchyData = d3.hierarchy(data).sum((d) => d.value);
+
+            treemap(hierarchyData);
+
+            const uniqueParents = Array.from(new Set(unpack(rows, 'parent')));
+            const parentColorMap = {};
+            uniqueParents.forEach((parent, i) => {
+                parentColorMap[parent] = colorScale(i);
+            });
+
+            const svg = d3.select("#treemap")
+                .append("svg")
+                .attr("width", width)
+                .attr("height", height);
+
+            const cells = svg.selectAll(".cell")
+                .data(hierarchyData.leaves())
+                .enter()
+                .append("foreignObject")
+                .attr("class", "cell")
+                .attr("x", (d) => d.x0)
+                .attr("y", (d) => d.y0)
+                .attr("width", (d) => d.x1 - d.x0)
+                .attr("height", (d) => d.y1 - d.y0)
+                .style("background-color", (d) => parentColorMap[d.data.parent]);
+
+            cells.append("xhtml:div")
+                .style("width", "100%")
+                .style("height", "100%")
+                .html((d) => `${d.data.name}<br>${d.value}`);
+        });
+    </script>
+</body>
+</html>
