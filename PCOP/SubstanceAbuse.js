@@ -38,12 +38,7 @@ d3.json("SubstanceAbuse_data.json", function(error, accidents) {
     const color = d3.scaleOrdinal()
       .domain(["MID NIGHT", "MORNING", "NIGHT","AFTERNOON"])
       .range([ "orange", "green", "red","blue"])
-    // const color ={
-    //     "MID NIGHT" : "orange",
-    //     "MORNING" : "#00FF00",
-    //     "NIGHT" : "#FF0000",
-    //     "AFTERNOON" : "#0000FF"
-    // }
+
     dimensions = d3.keys(accidents[0]);
     x.domain(dimensions);
 
@@ -72,13 +67,6 @@ extents = dimensions.map(function(p) { return [0,0]; });
 // The first element (0) can be thought of as the minimum value for that dimension.
 // The second element (0) can be thought of as the maximum value for that dimension.
 
-// Add grey background lines for context.
-// background = svg.append("g")
-//     .attr("class", "background")
-//     .selectAll("path")
-//     .data(accidents)
-//     .enter().append("path")
-//     .attr("d", path);
 
 // Add blue foreground lines for focus.
 foreground = svg.append("g")
@@ -192,4 +180,55 @@ function brush_parallel_chart() {
         return extents[i][1] <= d[p] && d[p] <= extents[i][0];
         }) ? null : "none";
     }); 
-}    
+}
+
+
+document.body.insertAdjacentHTML('beforeend', `
+    <div id="legend" class="legend">
+        <div class="legend-item">
+            <div class="legend-color" style="background-color: orange;"></div>
+            <div>MID NIGHT</div>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background-color: green;"></div>
+            <div>MORNING</div>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background-color: red;"></div>
+            <div>NIGHT</div>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background-color: blue;"></div>
+            <div>AFTERNOON</div>
+        </div>
+    </div>
+`);
+
+// Append the CSS styles to the head of your webpage
+const style = document.createElement('style');
+style.innerHTML = `
+    .legend {
+        position: absolute;
+        top: 520px;
+        right: 20px;
+        background: white;
+        border: 1px solid #ccc;
+        padding: 10px;
+        border-radius: 5px;
+        z-index: 1000;
+    }
+
+    .legend-item {
+        margin-bottom: 5px;
+    }
+
+    .legend-color {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+    /* Add more CSS styles as needed */
+`;
+
+document.head.appendChild(style);

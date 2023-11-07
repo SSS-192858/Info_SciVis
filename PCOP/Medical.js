@@ -193,3 +193,54 @@ function brush_parallel_chart() {
         }) ? null : "none";
     }); 
 }    
+
+
+document.body.insertAdjacentHTML('beforeend', `
+    <div id="legend" class="legend">
+        <div class="legend-item">
+            <div class="legend-color" style="background-color: orange;"></div>
+            <div>MID NIGHT</div>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background-color: green;"></div>
+            <div>MORNING</div>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background-color: red;"></div>
+            <div>NIGHT</div>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background-color: blue;"></div>
+            <div>AFTERNOON</div>
+        </div>
+    </div>
+`);
+
+// Append the CSS styles to the head of your webpage
+const style = document.createElement('style');
+style.innerHTML = `
+    .legend {
+        position: absolute;
+        top: 520px;
+        right: 20px;
+        background: white;
+        border: 1px solid #ccc;
+        padding: 10px;
+        border-radius: 5px;
+        z-index: 1000;
+    }
+
+    .legend-item {
+        margin-bottom: 5px;
+    }
+
+    .legend-color {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+    /* Add more CSS styles as needed */
+`;
+
+document.head.appendChild(style);
