@@ -193,3 +193,67 @@ function brush_parallel_chart() {
         }) ? null : "none";
     }); 
 }    
+
+
+// Append the legend HTML to the body of your webpage
+document.body.insertAdjacentHTML('beforeend', `
+    <div id="legend" class="legend">
+        <div class="legend-item">
+            <div class="legend-color" style="background-color: blue;"></div>
+            <div class="legend-label">Distraction</div>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background-color: black;"></div>
+            <div class="legend-label">Car Defects</div>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background-color: red;"></div>
+            <div class="legend-label">Substance Abuse</div>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background-color: orange;"></div>
+            <div class="legend-label">Driver not at fault</div>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background-color: brown;"></div>
+            <div class="legend-label">Driver Inexperience</div>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background-color: pink;"></div>
+            <div class="legend-label">Medical/Fatigue</div>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background-color: green;"></div>
+            <div class="legend-label">Traffic Rule Violation</div>
+        </div>
+    </div>
+`);
+
+// Append the CSS styles to the head of your webpage
+const style = document.createElement('style');
+style.innerHTML = `
+    .legend {
+        position: absolute;
+        top: 520px;
+        right: 20px;
+        background: white;
+        border: 1px solid #ccc;
+        padding: 10px;
+        border-radius: 5px;
+        z-index: 1000;
+    }
+
+    .legend-item {
+        margin-bottom: 5px;
+    }
+
+    .legend-color {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+    /* Add more CSS styles as needed */
+`;
+
+document.head.appendChild(style);
