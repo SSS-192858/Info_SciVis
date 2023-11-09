@@ -44,7 +44,9 @@ d3.json("Accident_Types.json", function(error, accidents) {
     //     "NIGHT" : "#FF0000",
     //     "AFTERNOON" : "#0000FF"
     // }
-    dimensions = d3.keys(accidents[0]);
+    dimensions = d3.keys(accidents[0]).filter(function (d) {
+        return d !== "MAJOR ACCIDENT TYPE 1";
+    });
     x.domain(dimensions);
 
     dimensions.forEach(function(d) {
@@ -197,7 +199,9 @@ function brush_parallel_chart() {
 
 // Append the legend HTML to the body of your webpage
 document.body.insertAdjacentHTML('beforeend', `
+    
     <div id="legend" class="legend">
+        <h2>Label</h2>
         <div class="legend-item">
             <div class="legend-color" style="background-color: blue;"></div>
             <div class="legend-label">Distraction</div>

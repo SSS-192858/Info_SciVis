@@ -44,7 +44,9 @@ d3.json("Medical.json", function(error, accidents) {
     //     "NIGHT" : "#FF0000",
     //     "AFTERNOON" : "#0000FF"
     // }
-    dimensions = d3.keys(accidents[0]);
+    dimensions = d3.keys(accidents[0]).filter(function (d) {
+        return d !== "CRASH_DAYTIME";
+    });
     x.domain(dimensions);
 
     dimensions.forEach(function(d) {
@@ -197,6 +199,7 @@ function brush_parallel_chart() {
 
 document.body.insertAdjacentHTML('beforeend', `
     <div id="legend" class="legend">
+    <h2>Label</h2>
         <div class="legend-item">
             <div class="legend-color" style="background-color: orange;"></div>
             <div>MID NIGHT</div>
