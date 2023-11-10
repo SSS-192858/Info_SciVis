@@ -1,0 +1,43 @@
+label,parent,values
+Accelerator Defective,Car Defects,186
+Brakes Defective,Car Defects,941
+Headlights Defective,Car Defects,26
+Other Lighting Defects,Car Defects,22
+Steering Failure,Car Defects,565
+Tire Failure/Inadequate,Car Defects,283
+Tow Hitch Defective,Car Defects,24
+Windshield Inadequate,Car Defects,5
+Cell Phone (hands-free),Distraction,8
+Driver Inattention/Distraction,Distraction,61077
+Glare,Distraction,377
+Other Electronic Device,Distraction,21
+Outside Car Distraction,Distraction,498
+Passenger Distraction,Distraction,665
+Animals Action,Driver not at fault,201
+Lane Marking Improper/Inadequate,Driver not at fault,63
+Obstruction/Debris,Driver not at fault,403
+Other Vehicular,Driver not at fault,6839
+Pavement Defective,Driver not at fault,245
+Pavement Slippery,Driver not at fault,1344
+Pedestrian/Bicyclist/Other Pedestrian Error/Confusion,Driver not at fault,2411
+Shoulders Defective/Improper,Driver not at fault,8
+Traffic Control Device Improper/Non-Working,Driver not at fault,106
+View Obstructed/Limited,Driver not at fault,2267
+Fatigued/Drowsy,Medical/Fatigue,275
+Fell Asleep,Medical/Fatigue,1004
+Lost Consciousness,Medical/Fatigue,447
+Physical Disability,Medical/Fatigue,98
+Alcohol Involvement,Substance Abuse,4205
+Prescription Medication,Substance Abuse,37
+Aggressive Driving/Road Rage,Traffic Rule Violation,1823
+Backing Unsafely,Traffic Rule Violation,9682
+Failure to Keep Right,Traffic Rule Violation,262
+Failure to Yield Right-of-Way,Traffic Rule Violation,17977
+Following Too Closely,Traffic Rule Violation,10353
+Oversized Vehicle,Traffic Rule Violation,1160
+Passing Too Closely,Traffic Rule Violation,10004
+Passing or Lane Usage Improper,Traffic Rule Violation,10099
+Traffic Control Disregarded,Traffic Rule Violation,7099
+Turning Improperly,Traffic Rule Violation,5742
+Unsafe Lane Changing,Traffic Rule Violation,3050
+Unsafe Speed,Traffic Rule Violation,7116
