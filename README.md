@@ -21,3 +21,11 @@ They have been generated using JavaScript and basic HTML. The steps to run the a
 4. Type the name of the HTML file of the PCOP you want to see like this `/<Example.html>`. Press Enter.
 5. You will be able to see the PCOP for the required Data. The different colors map to different time of day during accident.
 
+## Treemap plots - 
+In the treemaps directory, we have 4 html files that you can run to see the various plots.
+
+Please note that you will need d3 installed in your system to run the Javascript code for the treemaps.
+
+1. index.html contains the code for the borough-street treemap.
+2. squarify.html for the accident-type treemap, plotted using the d3 squarify method.
+3. slice.html contians the snake plot for the accident-type data.
