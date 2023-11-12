@@ -21,6 +21,31 @@ They have been generated using JavaScript and basic HTML. The steps to run the a
 4. Type the name of the HTML file of the PCOP you want to see like this `/<Example.html>`. Press Enter.
 5. You will be able to see the PCOP for the required Data. The different colors map to different time of day during accident.
 
+
+## Quiver Plots
+The plots have been made using Python3 with matplotlib and cartopy for plotting and animation. The 'Test_quiver.ipynb' file is used for generating the quiver plots and animations. We have plotted the quiver plots for the entire world and then showed the quiver plots only for Madagascar for visualization purposes.
+
+All you have to do for running the code is to move to the respective directory and run the 'Test_quiver.ipynb' file. 
+
+1. `cd Quiver_Plots`
+2. Run the 'Test_quiver.ipynb' file.
+
+All the required images will be generated and stored in the respective folder.
+
+
+## Streamline plots
+
+The plots have been made using Python3 with matplotlib and cartopy for plotting and animation. The 'StreamLine.ipynb' file is used for generating the streamline plots and animations. We have plotted the streamline plots for the entire world and then showed the plots only for Madagascar for visualization purposes.
+
+All you have to do for running the code is to move to the respective directory and run the 'StreamLine.ipynb' file. 
+
+
+1. `cd Quiver_Plots`
+2.  Run the 'StreamLine.ipynb' file.
+
+All the required images will be generated and stored in the respective folder.
+
+
 ## Treemap plots - 
 In the treemaps directory, we have 4 html files that you can run to see the various plots.
 
