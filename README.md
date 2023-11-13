@@ -3,11 +3,10 @@
 This repository contains all the codes for the Assignment 2 of the data visualisation course.
 
 ## Color Mapping
-The plots have been generated using Cartopy and Matplotlib. The codes for this are contained in the folder Color_Mapping. There are 2 notebooks in this part - 
+The plots have been generated using Cartopy and Matplotlib. The codes for this are contained in the folder Color_Mapping. There is 1 notebook in this part - 
 
-1. animation_color_mapping.ipynb is used to generate the animation files. They take data from all the 9 dates and make animations using them. The animations generated are for all possible color and scale combinations. The colors considered are - Viridis, Cividis, Plasma and Winter, while the scales used are - Logarithmic, Discrete and Continuous.
-2. images_color_mapping.ipynb is used to generate the images for the report. The date for the plots is 1 May 2015. The same experimentation has been carried out here as well, along with an additional diverging colormap - bwr (Blue White Red)
-
+1. images_color_mapping.ipynb is used to generate the images for the report. The date for the plots is 1 May 2015. It also plots the videos for the following combinations - Viridis Continuous, Viridis Logarithmic, Viridis Discrete, Cividis Discrete, Plasma Discrete, Winter Discrete and Bwr Discrete. The dates considered for the animations are - 1,11,21 of May,June,July 2015 (total of 9 dates).
+ 
 ## Node Link Diagrams
 The plots have been made using Gephi. Preprocessing has been done on the data, to convert it into a format usable by Gephi. This can be found in the node_link.ipynb file in the Node_link folder.
 After that, we have created plots in gephi. The 3 workbooks used are gephi_initial.gephi, gephi_positive.gephi and gephi_negative.gephi. THe dataset and image folders have also been attached for completeness.
