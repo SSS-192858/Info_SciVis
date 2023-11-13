@@ -6,10 +6,22 @@ This repository contains all the codes for the Assignment 2 of the data visualis
 The plots have been generated using Cartopy and Matplotlib. The codes for this are contained in the folder Color_Mapping. There is 1 notebook in this part - 
 
 1. images_color_mapping.ipynb is used to generate the images for the report. The date for the plots is 1 May 2015. It also plots the videos for the following combinations - Viridis Continuous, Viridis Logarithmic, Viridis Discrete, Cividis Discrete, Plasma Discrete, Winter Discrete and Bwr Discrete. The dates considered for the animations are - 1,11,21 of May,June,July 2015 (total of 9 dates).
+
+To run the file, we can simply go to the Color_Mapping folder using `cd Color_Mapping`, and then run the jupyter notebook to get the required images and videos.
+
+## Contour Mapping
+The plots have been generated using Cartopy and Matplotlib. The codes for this are contained in the folder Contour. There is 1 notebook in this part - 
+
+1. contour.ipynb is used to generate the images for the report. The dates for the plots are 1,11,21 of May,June,July 2015 (total of 9 dates).
+
+To run the file, we can simply go to the Contour folder using `cd Contour`, and then run the jupyter notebook to get the required images.
  
 ## Node Link Diagrams
 The plots have been made using Gephi. Preprocessing has been done on the data, to convert it into a format usable by Gephi. This can be found in the node_link.ipynb file in the Node_link folder.
-After that, we have created plots in gephi. The 3 workbooks used are gephi_initial.gephi, gephi_positive.gephi and gephi_negative.gephi. THe dataset and image folders have also been attached for completeness.
+
+After that, we have created plots in gephi. The 3 workbooks used are gephi_initial.gephi, gephi_positive.gephi and gephi_negative.gephi. The dataset and image folders have also been attached for completeness.
+
+To run the files, open the Gephi software, then go to File > Open. Then, select the workbook which you want to open.
 
 ## Parallel-Co-ordinates plot
 They have been generated using JavaScript and basic HTML. The steps to run the and view the Parallel Co-ordinates plot.
@@ -31,19 +43,16 @@ All you have to do for running the code is to move to the respective directory a
 
 All the required images will be generated and stored in the respective folder.
 
-
 ## Streamline plots
 
 The plots have been made using Python3 with matplotlib and cartopy for plotting and animation. The 'StreamLine.ipynb' file is used for generating the streamline plots and animations. We have plotted the streamline plots for the entire world and then showed the plots only for India for visualization purposes.
 
 All you have to do for running the code is to move to the respective directory and run the 'StreamLine.ipynb' file. 
 
-
 1. `cd Quiver_Plots`
 2.  Run the 'StreamLine.ipynb' file.
 
 All the required images will be generated and stored in the respective folder.
-
 
 ## Treemap plots
 In the treemaps directory, we have 4 html files that you can run to see the various plots.
