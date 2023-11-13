@@ -62,3 +62,5 @@ Please note that you will need d3 installed in your system to run the Javascript
 1. index.html contains the code for the borough-street treemap.
 2. squarify.html for the accident-type treemap, plotted using the d3 squarify method.
 3. slice.html contians the snake plot for the accident-type data.
+
+To run, simply open the html files in a browser like Google Chrome, Firefox etc.
