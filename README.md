@@ -11,7 +11,7 @@ The plots have been generated using Cartopy and Matplotlib. The codes for this a
 The plots have been made using Gephi. Preprocessing has been done on the data, to convert it into a format usable by Gephi. This can be found in the node_link.ipynb file in the Node_link folder.
 After that, we have created plots in gephi. The 3 workbooks used are gephi_initial.gephi, gephi_positive.gephi and gephi_negative.gephi. THe dataset and image folders have also been attached for completeness.
 
-## Parallel-Co-ordinates plot - 
+## Parallel-Co-ordinates plot
 They have been generated using JavaScript and basic HTML. The steps to run the and view the Parallel Co-ordinates plot.
 
 1. Navigate to PCOP directory `cd PCOP`. We have three various JS files used for plotting three different Parallel Co-ordinates plots.
@@ -45,7 +45,7 @@ All you have to do for running the code is to move to the respective directory a
 All the required images will be generated and stored in the respective folder.
 
 
-## Treemap plots - 
+## Treemap plots
 In the treemaps directory, we have 4 html files that you can run to see the various plots.
 
 Please note that you will need d3 installed in your system to run the Javascript code for the treemaps.
