@@ -23,7 +23,7 @@ They have been generated using JavaScript and basic HTML. The steps to run the a
 
 
 ## Quiver Plots
-The plots have been made using Python3 with matplotlib and cartopy for plotting and animation. The 'Test_quiver.ipynb' file is used for generating the quiver plots and animations. We have plotted the quiver plots for the entire world and then showed the quiver plots only for Madagascar for visualization purposes.
+The plots have been made using Python3 with matplotlib and cartopy for plotting and animation. The 'Test_quiver.ipynb' file is used for generating the quiver plots and animations. We have plotted the quiver plots for the entire world and then showed the quiver plots only for India for visualization purposes.
 
 All you have to do for running the code is to move to the respective directory and run the 'Test_quiver.ipynb' file. 
 
@@ -35,7 +35,7 @@ All the required images will be generated and stored in the respective folder.
 
 ## Streamline plots
 
-The plots have been made using Python3 with matplotlib and cartopy for plotting and animation. The 'StreamLine.ipynb' file is used for generating the streamline plots and animations. We have plotted the streamline plots for the entire world and then showed the plots only for Madagascar for visualization purposes.
+The plots have been made using Python3 with matplotlib and cartopy for plotting and animation. The 'StreamLine.ipynb' file is used for generating the streamline plots and animations. We have plotted the streamline plots for the entire world and then showed the plots only for India for visualization purposes.
 
 All you have to do for running the code is to move to the respective directory and run the 'StreamLine.ipynb' file. 
 
