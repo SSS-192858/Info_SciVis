@@ -64,3 +64,12 @@ Please note that you will need d3 installed in your system to run the Javascript
 3. slice.html contians the snake plot for the accident-type data.
 
 To run, simply open the html files in a browser like Google Chrome, Firefox etc.
+
+## Link to the codes
+
+OneDrive link - 
+https://iiitbac-my.sharepoint.com/:f:/g/personal/siddharth_kothari_iiitb_ac_in/EjFh_JLx9N1Oqd6wA3Qj0jgBZJBOW9o3wLPpDxGYMwIbKg?e=O3Xm03 
+
+Github link - 
+https://github.com/SSS-192858/Info_SciVis.git
+
